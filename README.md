@@ -16,6 +16,19 @@ sudo adduser newuser
 sudo usermod -aG sudo newuser
 ```
 
+## Add newuser to the ubuntu group (assuming /home/ubuntu is owned by user ubuntu and group ubuntu):
+
+```bash
+sudo usermod -aG ubuntu newuser
+```
+
+## Set the group ownership and permissions of /home/ubuntu to allow group members to write:
+
+```bash
+sudo chgrp -R ubuntu /home/ubuntu
+sudo chmod -R 770 /home/ubuntu
+```
+
 ---
 
 ## SSH into Ubuntu VM (VMware)
