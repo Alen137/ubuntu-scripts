@@ -118,6 +118,7 @@ sudo apt install python3-pip
 ```bash
 sudo apt update
 python3 app.py
+```
 
 ---
 
